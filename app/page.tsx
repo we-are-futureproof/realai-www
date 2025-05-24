@@ -9,6 +9,24 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'AI Agents for Real Estate Brokerages',
   description: 'Transform your real estate brokerage with human-guided AI deployment. Custom AI agents for lead generation, CRM automation, marketing, and transaction management.',
+  openGraph: {
+    title: 'AI Agents for Real Estate Brokerages | RealAI',
+    description: 'Where real estate meets real intelligence. Professional-grade AI deployment with white-glove precision for real estate brokerages.',
+    url: 'https://realai.com',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1000,
+        height: 400,
+        alt: 'RealAI - AI Agents for Real Estate Brokerages',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Agents for Real Estate Brokerages | RealAI',
+    description: 'Where real estate meets real intelligence. Professional-grade AI deployment with white-glove precision.',
+  },
 }
 
 export default function HomePage() {
@@ -27,7 +45,7 @@ export default function HomePage() {
               Unlock the Power of <span className="text-blue-400">AI Agents</span> for Your Real Estate Brokerage
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              We don't hand your voice over to a bot. We train the bot to sound like you. Professional-grade AI
+              Where real estate meets real intelligence. We don't hand your voice over to a bot. We train the bot to sound like you. Professional-grade AI
               deployment with white-glove precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -315,9 +333,12 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Let's Build Your AI Team</h2>
             <p className="text-xl mb-4 text-slate-300">You've built a great brokerage.</p>
-            <p className="text-xl mb-8 text-slate-300">
+            <p className="text-xl mb-4 text-slate-300">
               Now let's automate the parts that slow you down—so your agents can sell more, work less, and build a brand
               people want to join.
+            </p>
+            <p className="text-lg mb-8 text-slate-400 italic">
+              The future of real estate isn't artificial.
             </p>
             <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4 mb-6" asChild>
               <Link href="/discovery">Schedule a Discovery Call Today</Link>

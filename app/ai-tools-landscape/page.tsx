@@ -9,6 +9,24 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'AI Tools Guide for Real Estate 2025',
   description: 'Comprehensive guide to AI tools for real estate agents and brokerages. Lead generation, CRM automation, property analysis, and why integration matters more than individual tools.',
+  openGraph: {
+    title: 'AI Tools Guide for Real Estate 2025 | RealAI',
+    description: 'Complete breakdown of AI tools for real estate: lead generation, CRM automation, property analysis. Why integration matters more than individual tools.',
+    url: 'https://realai.com/ai-tools-landscape',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1000,
+        height: 400,
+        alt: 'RealAI - AI Tools Guide for Real Estate 2025',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Tools Guide for Real Estate 2025 | RealAI',
+    description: 'Comprehensive guide to AI tools for real estate. Where real estate meets real intelligence.',
+  },
 }
 
 export default function AIToolsLandscapePage() {
@@ -25,7 +43,7 @@ export default function AIToolsLandscapePage() {
               AI Tools for <span className="text-green-400">Real Estate</span> in 2025
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              A complete breakdown of AI-powered tools available to real estate agents and brokerages—and why
+              Where real estate meets real intelligence. A complete breakdown of AI-powered tools available to real estate agents and brokerages—and why
               integration matters more than individual tools.
             </p>
           </div>

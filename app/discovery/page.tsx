@@ -12,6 +12,24 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Discovery Questionnaire - Start Your AI Journey',
   description: 'Tell us about your brokerage needs and goals. Complete our discovery form to receive a customized AI implementation strategy designed specifically for your real estate business.',
+  openGraph: {
+    title: 'Discovery Questionnaire - Start Your AI Journey | RealAI',
+    description: 'Ready to transform your brokerage? Complete our discovery form to receive a customized AI implementation strategy designed for your business.',
+    url: 'https://realai.com/discovery',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1000,
+        height: 400,
+        alt: 'RealAI Discovery - Start Your AI Journey',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Discovery Questionnaire - Start Your AI Journey | RealAI',
+    description: 'Transform your brokerage with AI. Where real estate meets real intelligence.',
+  },
 }
 
 export default function DiscoveryPage() {
@@ -30,7 +48,7 @@ export default function DiscoveryPage() {
               Let's Build Your <span className="text-blue-400">AI Strategy</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              Help us understand your brokerage needs so we can design the perfect AI solution for your team.
+              Where real estate meets real intelligence. Help us understand your brokerage needs so we can design the perfect AI solution for your team.
             </p>
           </div>
         </div>

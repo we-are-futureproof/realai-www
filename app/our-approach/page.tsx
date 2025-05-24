@@ -9,6 +9,24 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Our Approach - Human-Guided AI Deployment',
   description: 'Discover RealAI\'s unique 4-phase methodology for safe, effective AI implementation. Professional-grade AI deployment with white-glove precision for real estate brokerages.',
+  openGraph: {
+    title: 'Our Approach - Human-Guided AI Deployment | RealAI',
+    description: 'We\'re not selling AI—we\'re selling confidence, control, and peace of mind. Discover our 4-phase methodology for safe AI implementation.',
+    url: 'https://realai.com/our-approach',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1000,
+        height: 400,
+        alt: 'RealAI Approach - Human-Guided AI Deployment',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Approach - Human-Guided AI Deployment | RealAI',
+    description: 'We\'re not selling AI—we\'re selling confidence, control, and peace of mind. The future of real estate isn\'t artificial.',
+  },
 }
 
 export default function OurApproachPage() {
@@ -27,7 +45,7 @@ export default function OurApproachPage() {
               Our <span className="text-blue-400">Approach</span> to AI Implementation
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              We're not selling AI—we're selling confidence, control, and peace of mind that automation won't wreck what
+              Where real estate meets real intelligence. We're not selling AI—we're selling confidence, control, and peace of mind that automation won't wreck what
               you've built.
             </p>
           </div>
@@ -277,7 +295,10 @@ export default function OurApproachPage() {
                 What they actually want is clarity, control, and peace of mind that automation won't wreck what they've
                 built.
               </p>
-              <p className="text-xl font-semibold text-blue-900">RealAI offers that peace of mind.</p>
+              <p className="text-xl font-semibold text-blue-900 mb-3">RealAI offers that peace of mind.</p>
+              <p className="text-lg text-blue-700 italic">
+                The future of real estate isn't artificial.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">

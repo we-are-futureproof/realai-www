@@ -9,6 +9,24 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About RealAI - Meet Our Team',
   description: 'Learn about RealAI\'s leadership team combining 20+ years of real estate expertise with cutting-edge AI technology to transform brokerage operations.',
+  openGraph: {
+    title: 'About RealAI - Meet Our Team | RealAI',
+    description: 'Meet the team behind RealAI. 20+ years of real estate expertise meets cutting-edge AI technology. The future of real estate isn\'t artificial.',
+    url: 'https://realai.com/about',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1000,
+        height: 400,
+        alt: 'RealAI Team - Where real estate meets real intelligence',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About RealAI - Meet Our Team | RealAI',
+    description: 'Meet the team behind RealAI. 20+ years of real estate expertise meets cutting-edge AI technology.',
+  },
 }
 
 export default function AboutPage() {
@@ -25,7 +43,7 @@ export default function AboutPage() {
               About <span className="text-blue-400">RealAI</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              Combining 20+ years of real estate expertise with cutting-edge AI technology to transform how brokerages
+              Where real estate meets real intelligence. Combining 20+ years of real estate expertise with cutting-edge AI technology to transform how brokerages
               operate.
             </p>
           </div>
@@ -189,9 +207,12 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
                 We believe AI should amplify human expertise, not replace it.
               </h3>
-              <p className="text-lg text-slate-700">
+              <p className="text-lg text-slate-700 mb-4">
                 Our approach combines deep real estate knowledge with cutting-edge AI technology to create solutions
                 that feel natural, work reliably, and scale with your business.
+              </p>
+              <p className="text-lg text-slate-600 italic">
+                The future of real estate isn't artificial.
               </p>
             </div>
           </div>

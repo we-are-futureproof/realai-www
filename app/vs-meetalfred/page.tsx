@@ -9,6 +9,24 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'RealAI vs MeetAlfred - Why Generic AI Falls Short',
   description: 'Compare RealAI\'s specialized real estate AI solutions against generic tools like MeetAlfred. Discover why domain expertise and custom implementation matter for brokerages.',
+  openGraph: {
+    title: 'RealAI vs MeetAlfred - Why Generic AI Falls Short | RealAI',
+    description: 'Professional-grade AI vs generic solutions. Why domain expertise and custom implementation matter for real estate brokerages.',
+    url: 'https://realai.com/vs-meetalfred',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1000,
+        height: 400,
+        alt: 'RealAI vs Generic AI Solutions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'RealAI vs MeetAlfred - Why Generic AI Falls Short | RealAI',
+    description: 'Professional-grade AI vs generic solutions. The future of real estate isn\'t artificial.',
+  },
 }
 
 export default function VsMeetAlfredPage() {
@@ -296,9 +314,12 @@ export default function VsMeetAlfredPage() {
                 They hired professionals to build smart websites, not broken ones.
               </p>
               <p className="text-lg text-slate-600 mb-6">They didn't just use the internet. They used it well.</p>
-              <p className="text-xl font-semibold text-slate-800">
+              <p className="text-xl font-semibold text-slate-800 mb-3">
                 That's what we offer: a professional-grade AI team that ensures you move fast without breaking your
                 brand.
+              </p>
+              <p className="text-lg text-slate-600 italic">
+                The future of real estate isn't artificial.
               </p>
             </div>
           </div>
@@ -311,7 +332,7 @@ export default function VsMeetAlfredPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Ready for Professional-Grade AI?</h2>
             <p className="text-xl mb-8 text-slate-300">
-              Don't settle for generic solutions. Get AI that's built for real estate, deployed by experts, and designed
+              Where real estate meets real intelligence. Don't settle for generic solutions. Get AI that's built for real estate, deployed by experts, and designed
               to scale your business safely.
             </p>
             <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4" asChild>

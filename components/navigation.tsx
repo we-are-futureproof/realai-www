@@ -20,7 +20,7 @@ export function Navigation() {
   return (
     <nav className="bg-white border-b border-slate-200 sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/">
@@ -29,7 +29,7 @@ export function Navigation() {
                 alt="RealAI"
                 width={1000}
                 height={400}
-                className="h-8 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
           </div>
