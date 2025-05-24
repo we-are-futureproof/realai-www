@@ -4,6 +4,12 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Users, TrendingUp, Star, Zap, Shield, Target, Clock } from "lucide-react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About RealAI - Meet Our Team',
+  description: 'Learn about RealAI\'s leadership team combining 20+ years of real estate expertise with cutting-edge AI technology to transform brokerage operations.',
+}
 
 export default function AboutPage() {
   return (
@@ -14,7 +20,7 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2">Meet the Team</Badge>
+            <Badge className="mb-6 bg-blue-600 text-white px-4 py-2 hover:bg-blue-600">Meet the Team</Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               About <span className="text-blue-400">RealAI</span>
             </h1>
@@ -339,7 +345,7 @@ export default function AboutPage() {
               Let's discuss how our combined expertise can transform your brokerage with AI that actually works.
             </p>
             <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4" asChild>
-              <Link href="/#contact">Schedule Your Discovery Call</Link>
+              <Link href="/discovery">Schedule Your Discovery Call</Link>
             </Button>
           </div>
         </div>

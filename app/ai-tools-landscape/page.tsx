@@ -4,6 +4,12 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Target } from "lucide-react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'AI Tools Guide for Real Estate 2025',
+  description: 'Comprehensive guide to AI tools for real estate agents and brokerages. Lead generation, CRM automation, property analysis, and why integration matters more than individual tools.',
+}
 
 export default function AIToolsLandscapePage() {
   return (
@@ -14,7 +20,7 @@ export default function AIToolsLandscapePage() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-green-600 hover:bg-green-700 text-white px-4 py-2">Comprehensive Guide</Badge>
+            <Badge className="mb-6 bg-green-600 text-white px-4 py-2 hover:bg-green-600">Comprehensive Guide</Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               AI Tools for <span className="text-green-400">Real Estate</span> in 2025
             </h1>
@@ -734,7 +740,7 @@ export default function AIToolsLandscapePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4" asChild>
-                <Link href="/#contact">Schedule Discovery Call</Link>
+                <Link href="/discovery">Schedule Discovery Call</Link>
               </Button>
               <Button
                 size="lg"

@@ -4,6 +4,12 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, X, Shield, Users, AlertTriangle } from "lucide-react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'RealAI vs MeetAlfred - Why Generic AI Falls Short',
+  description: 'Compare RealAI\'s specialized real estate AI solutions against generic tools like MeetAlfred. Discover why domain expertise and custom implementation matter for brokerages.',
+}
 
 export default function VsMeetAlfredPage() {
   return (
@@ -14,7 +20,7 @@ export default function VsMeetAlfredPage() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-red-600 hover:bg-red-700 text-white px-4 py-2">Why Generic AI Falls Short</Badge>
+            <Badge className="mb-6 bg-red-600 text-white px-4 py-2 hover:bg-red-600">Why Generic AI Falls Short</Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               RealAI vs. <span className="text-red-400">Off-the-Shelf</span> Solutions
             </h1>
@@ -309,7 +315,7 @@ export default function VsMeetAlfredPage() {
               to scale your business safely.
             </p>
             <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4" asChild>
-              <Link href="/#contact">Schedule Your Discovery Call</Link>
+              <Link href="/discovery">Schedule Your Discovery Call</Link>
             </Button>
           </div>
         </div>

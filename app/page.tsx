@@ -4,6 +4,12 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Users, TrendingUp, Star, Zap, Shield, Target, Clock } from "lucide-react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'AI Agents for Real Estate Brokerages',
+  description: 'Transform your real estate brokerage with human-guided AI deployment. Custom AI agents for lead generation, CRM automation, marketing, and transaction management.',
+}
 
 export default function HomePage() {
   return (
@@ -14,7 +20,7 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2">
+            <Badge className="mb-6 bg-blue-600 text-white px-4 py-2 hover:bg-blue-600">
               Human-Guided AI Deployment
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -25,8 +31,8 @@ export default function HomePage() {
               deployment with white-glove precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4">
-                Schedule Discovery Call
+              <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4" asChild>
+                <Link href="/discovery">Schedule Discovery Call</Link>
               </Button>
               <Button
                 size="lg"
@@ -313,8 +319,8 @@ export default function HomePage() {
               Now let's automate the parts that slow you down—so your agents can sell more, work less, and build a brand
               people want to join.
             </p>
-            <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4 mb-6">
-              Schedule a Discovery Call Today
+            <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4 mb-6" asChild>
+              <Link href="/discovery">Schedule a Discovery Call Today</Link>
             </Button>
             <p className="text-slate-400">Your future team of AI agents is ready to work</p>
           </div>
