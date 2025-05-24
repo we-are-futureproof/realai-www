@@ -3,39 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Users, TrendingUp, Star, Zap, Shield, Target, Clock } from "lucide-react"
 import Link from "next/link"
+import { Navigation } from "@/components/navigation"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-slate-900">
-                RealAI
-              </Link>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/vs-meetalfred" className="text-slate-600 hover:text-slate-900">
-                Why Not MeetAlfred?
-              </Link>
-              <Link href="/ai-tools-landscape" className="text-slate-600 hover:text-slate-900">
-                AI Tools Guide
-              </Link>
-              <Link href="/our-approach" className="text-slate-600 hover:text-slate-900">
-                Our Approach
-              </Link>
-              <Link href="/about" className="text-slate-600 hover:text-slate-900">
-                About
-              </Link>
-              <Button asChild>
-                <Link href="#contact">Get Started</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
@@ -52,13 +25,13 @@ export default function HomePage() {
               deployment with white-glove precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
+              <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4">
                 Schedule Discovery Call
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="text-white border-white hover:bg-white hover:text-slate-900 text-lg px-8 py-4"
+                className="text-slate-900 bg-white border-white hover:bg-slate-900 hover:text-white text-lg px-8 py-4"
                 asChild
               >
                 <Link href="/vs-meetalfred">Why Not Off-the-Shelf?</Link>
@@ -251,25 +224,27 @@ export default function HomePage() {
             <h2 className="text-4xl font-bold text-center mb-16 text-slate-900">Investment Tiers</h2>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="border-2 hover:border-blue-200 transition-colors">
+              <Card className="border-2 hover:border-blue-200 transition-colors flex flex-col h-full">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Starter</CardTitle>
                   <div className="text-4xl font-bold text-blue-600 mt-4">$15,000</div>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>3 AI agents</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>Standard CRM integration</span>
+                <CardContent className="flex-1 flex flex-col">
+                  <div className="space-y-4 flex-1">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>3 AI agents</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Standard CRM integration</span>
+                    </div>
                   </div>
                   <Button className="w-full mt-6">Get Started</Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-blue-500 relative">
+              <Card className="border-2 border-blue-500 relative flex flex-col h-full">
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <Badge className="bg-blue-600 text-white">Most Popular</Badge>
                 </div>
@@ -277,44 +252,48 @@ export default function HomePage() {
                   <CardTitle className="text-2xl">Pro</CardTitle>
                   <div className="text-4xl font-bold text-blue-600 mt-4">$25,000</div>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>5 AI agents</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>MLS sync</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>Marketing automation</span>
+                <CardContent className="flex-1 flex flex-col">
+                  <div className="space-y-4 flex-1">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>5 AI agents</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>MLS sync</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Marketing automation</span>
+                    </div>
                   </div>
                   <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">Get Started</Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-2 hover:border-blue-200 transition-colors">
+              <Card className="border-2 hover:border-blue-200 transition-colors flex flex-col h-full">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Enterprise</CardTitle>
                   <div className="text-4xl font-bold text-blue-600 mt-4">$50,000</div>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>8+ AI agents</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>Full integration</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>Team training</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span>Ongoing support</span>
+                <CardContent className="flex-1 flex flex-col">
+                  <div className="space-y-4 flex-1">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>8+ AI agents</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Full integration</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Team training</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <span>Ongoing support</span>
+                    </div>
                   </div>
                   <Button className="w-full mt-6">Get Started</Button>
                 </CardContent>
@@ -334,7 +313,7 @@ export default function HomePage() {
               Now let's automate the parts that slow you down—so your agents can sell more, work less, and build a brand
               people want to join.
             </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 mb-6">
+            <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4 mb-6">
               Schedule a Discovery Call Today
             </Button>
             <p className="text-slate-400">Your future team of AI agents is ready to work</p>

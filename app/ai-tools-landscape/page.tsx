@@ -3,36 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Target } from "lucide-react"
 import Link from "next/link"
+import { Navigation } from "@/components/navigation"
 
 export default function AIToolsLandscapePage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-slate-900">
-                RealAI
-              </Link>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-slate-600 hover:text-slate-900">
-                Home
-              </Link>
-              <Link href="/vs-meetalfred" className="text-slate-600 hover:text-slate-900">
-                Why Not MeetAlfred?
-              </Link>
-              <Link href="/our-approach" className="text-slate-600 hover:text-slate-900">
-                Our Approach
-              </Link>
-              <Button asChild>
-                <Link href="/#contact">Get Started</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
@@ -757,13 +733,13 @@ export default function AIToolsLandscapePage() {
               works together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" asChild>
+              <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4" asChild>
                 <Link href="/#contact">Schedule Discovery Call</Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="text-white border-white hover:bg-white hover:text-slate-900 text-lg px-8 py-4"
+                className="text-slate-900 bg-white border-white hover:bg-slate-900 hover:text-white text-lg px-8 py-4"
                 asChild
               >
                 <Link href="/our-approach">Learn Our Approach</Link>
