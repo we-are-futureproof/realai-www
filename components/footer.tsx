@@ -130,23 +130,29 @@ export function Footer() {
               <h4 className="font-medium text-white mb-3 text-sm">Follow Us</h4>
               <div className="flex gap-3">
                 <a
-                  href="#twitter"
+                  href="https://twitter.com/realai"
                   className="text-slate-400 hover:text-white transition-colors"
                   aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Twitter className="w-5 h-5" />
                 </a>
                 <a
-                  href="#linkedin"
+                  href="https://linkedin.com/company/realai"
                   className="text-slate-400 hover:text-white transition-colors"
                   aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="#youtube"
+                  href="https://youtube.com/@realai"
                   className="text-slate-400 hover:text-white transition-colors"
                   aria-label="YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Youtube className="w-5 h-5" />
                 </a>
@@ -163,13 +169,13 @@ export function Footer() {
             <p>&copy; {currentYear} RealAI. All rights reserved.</p>
           </div>
           <div className="flex gap-6">
-            <Link href="#privacy-policy" className="hover:text-white transition-colors">
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#terms-of-service" className="hover:text-white transition-colors">
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">
               Terms of Service
             </Link>
-            <Link href="#security" className="hover:text-white transition-colors">
+            <Link href="/security" className="hover:text-white transition-colors">
               Security
             </Link>
           </div>

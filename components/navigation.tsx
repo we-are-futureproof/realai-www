@@ -10,12 +10,22 @@ import { Menu, X, ChevronDown } from "lucide-react"
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const navigationLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
+  const aboutLinks = [
+    { href: "/about", label: "About Us" },
     { href: "/our-approach", label: "Our Approach" },
-    { href: "/ai-tools-landscape", label: "AI Tools Guide" },
+  ]
+
+  const toolsLinks = [
     { href: "/roi-calculator", label: "ROI Calculator" },
+    { href: "/ai-tools-landscape", label: "AI Tools Guide" },
+  ]
+
+  const resourcesLinks = [
+    { href: "/resources/case-studies", label: "Case Studies" },
+    { href: "/resources/implementation-guide", label: "Implementation Guide" },
+    { href: "/resources/ai-best-practices", label: "AI Best Practices" },
+    { href: "/resources/success-stories", label: "Success Stories" },
+    { href: "/resources/help-center", label: "Help Center" },
   ]
 
   const competitiveLinks = [
@@ -56,15 +66,58 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navigationLinks.slice(1).map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-slate-600 hover:text-slate-900 transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {/* About Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-slate-600 hover:text-slate-900 transition-colors">
+                About
+                <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-48">
+                {aboutLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href} className="w-full">
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Tools Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-slate-600 hover:text-slate-900 transition-colors">
+                Tools
+                <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-48">
+                {toolsLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href} className="w-full">
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Resources Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-slate-600 hover:text-slate-900 transition-colors">
+                Resources
+                <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-56">
+                {resourcesLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href} className="w-full">
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Why Choose RealAI Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-slate-600 hover:text-slate-900 transition-colors">
                 Why Choose RealAI?
@@ -80,6 +133,7 @@ export function Navigation() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
             <Button asChild>
               <Link href="/get-started">Get Started</Link>
             </Button>
@@ -101,16 +155,53 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-slate-200">
-              {navigationLinks.slice(1).map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="block px-3 py-2 text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              
+              {/* About Section */}
+              <div className="px-3 py-2">
+                <div className="text-sm font-medium text-slate-700 mb-2">About</div>
+                {aboutLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block px-3 py-1 text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors text-sm"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Tools Section */}
+              <div className="px-3 py-2">
+                <div className="text-sm font-medium text-slate-700 mb-2">Tools</div>
+                {toolsLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block px-3 py-1 text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors text-sm"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Resources Section */}
+              <div className="px-3 py-2">
+                <div className="text-sm font-medium text-slate-700 mb-2">Resources</div>
+                {resourcesLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block px-3 py-1 text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors text-sm"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Why Choose RealAI Section */}
               <div className="px-3 py-2">
                 <div className="text-sm font-medium text-slate-700 mb-2">Why Choose RealAI?</div>
                 {competitiveLinks.map((link) => (
@@ -124,6 +215,8 @@ export function Navigation() {
                   </Link>
                 ))}
               </div>
+
+              {/* Get Started Button */}
               <div className="px-3 py-2">
                 <Button asChild className="w-full">
                   <Link href="/get-started" onClick={() => setIsOpen(false)}>

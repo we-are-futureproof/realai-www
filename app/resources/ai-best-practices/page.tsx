@@ -6,7 +6,7 @@ import { Metadata } from 'next'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Navigation } from '@/components/navigation'
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components/footer'
 import { 
   CheckCircle, 
   TrendingUp, 
