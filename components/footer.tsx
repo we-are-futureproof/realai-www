@@ -8,11 +8,22 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const competitiveComparisons = [
-    { href: "/compare/realai-vs-meetalfred", label: "vs MeetAlfred" },
+    { href: "/compare/realai-vs-activecampaign", label: "vs ActiveCampaign" },
+    { href: "/compare/realai-vs-building-inhouse", label: "vs Building In-House" },
     { href: "/compare/realai-vs-cinc", label: "vs CINC" },
+    { href: "/compare/realai-vs-diy-ai", label: "vs DIY AI" },
+    { href: "/compare/realai-vs-follow-up-boss", label: "vs Follow Up Boss" },
+    { href: "/compare/realai-vs-hubspot", label: "vs HubSpot" },
+    { href: "/compare/realai-vs-kvcore", label: "vs kvCORE" },
+    { href: "/compare/realai-vs-lofty", label: "vs Lofty (Chime)" },
+    { href: "/compare/realai-vs-meetalfred", label: "vs MeetAlfred" },
+    { href: "/compare/realai-vs-roof-ai", label: "vs Roof AI" },
+    { href: "/compare/realai-vs-salesforce", label: "vs Salesforce" },
     { href: "/compare/realai-vs-structurely", label: "vs Structurely" },
+    { href: "/compare/realai-vs-top-producer", label: "vs Top Producer" },
+    { href: "/compare/realai-vs-traditional-software", label: "vs Traditional Software" },
     { href: "/compare/realai-vs-virtual-assistants", label: "vs Virtual Assistants" },
-    { href: "#top-producer", label: "vs Top Producer (Coming Soon)", disabled: true },
+    { href: "/compare/realai-vs-wise-agent", label: "vs Wise Agent" },
   ]
 
   const quickLinks = [
@@ -81,18 +92,12 @@ export function Footer() {
             <ul className="space-y-3">
               {competitiveComparisons.map((link) => (
                 <li key={link.href}>
-                  {link.disabled ? (
-                    <span className="text-slate-500 text-sm">
-                      {link.label}
-                    </span>
-                  ) : (
-                    <Link
-                      href={link.href}
-                      className="text-slate-300 hover:text-white transition-colors text-sm"
-                    >
-                      {link.label}
-                    </Link>
-                  )}
+                  <Link
+                    href={link.href}
+                    className="text-slate-300 hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

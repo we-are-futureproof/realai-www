@@ -249,10 +249,10 @@ export default function StructurelyComparisonPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-blue-600 text-white px-4 py-2 hover:bg-blue-600">Real Estate AI Comparison</Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              RealAI vs. <span className="text-blue-400">{competitor.name}</span>
+              One AI Assistant or Six? Why Complete AI Teams Outperform Solo Acts
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              Automate your lead engagement with conversational AI
+              Structurely gives you Holmes. RealAI gives you an entire AI department working 24/7.
             </p>
           </div>
         </div>
@@ -263,7 +263,7 @@ export default function StructurelyComparisonPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-slate-900">The Problem with One-Size-Fits-All AI</h2>
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">When One AI Assistant Isn't Enough</h2>
               <p className="text-xl text-slate-600">
                 Generic AI tools like {competitor.name} offer basic functionalities, but when it comes to real estate—where
                 every lead and interaction is critical—they fall short.

@@ -60,7 +60,7 @@ export default function HomePage() {
                 className="text-slate-900 bg-white border-white hover:bg-slate-900 hover:text-white text-lg px-8 py-4"
                 asChild
               >
-                <Link href="/vs-meetalfred">Why Not Off-the-Shelf?</Link>
+                <Link href="/compare/realai-vs-meetalfred">Why Not Off-the-Shelf?</Link>
               </Button>
             </div>
           </div>

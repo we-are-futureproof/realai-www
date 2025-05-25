@@ -9,25 +9,25 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'RealAI vs CINC - Why Choose RealAI',
-  description: 'Compare RealAI\'s specialized real estate AI solutions against CINC. Discover why domain expertise and custom implementation matter for brokerages.',
+  title: 'RealAI vs CINC - Skip Costly Lead Packages, Choose Intelligent AI',
+  description: 'Compare RealAI vs CINC. Escape expensive lead generation costs and forced monthly packages. Get comprehensive AI automation without the hidden fees.',
   openGraph: {
-    title: 'RealAI vs CINC - Why Choose RealAI | RealAI',
-    description: 'Professional-grade AI vs generic solutions. Why domain expertise and custom implementation matter for real estate brokerages.',
-    url: 'https://realai.com/vs-cinc',
+    title: 'RealAI vs CINC - Skip Costly Lead Packages | RealAI',
+    description: 'Why brokerages are switching from CINC\'s expensive lead generation model to RealAI\'s comprehensive AI automation.',
+    url: 'https://realai.com/compare/realai-vs-cinc',
     images: [
       {
         url: '/logo.png',
         width: 1000,
         height: 400,
-        alt: 'RealAI vs CINC Solutions',
+        alt: 'RealAI vs CINC - No Forced Lead Purchases',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RealAI vs CINC - Why Choose RealAI | RealAI',
-    description: 'Professional-grade AI vs generic solutions. The future of real estate isn\'t artificial.',
+    title: 'RealAI vs CINC - Skip Costly Lead Packages | RealAI',
+    description: 'Escape expensive lead generation costs. Choose intelligent AI automation instead.',
   },
 }
 
@@ -61,8 +61,8 @@ export default function CINCComparisonPage() {
       'Limited AI capabilities'
     ],
     hero: {
-      title: 'Your Ultimate Real Estate CRM Solution',
-      subtitle: 'AI-powered lead generation and marketing automation',
+      title: 'Skip Costly Lead Packages, Choose Intelligent AI',
+      subtitle: 'Escape expensive lead generation costs and forced monthly packages. Get comprehensive AI automation without the hidden fees.',
       image: '/images/cinc-hero.jpg',
       cta1: 'Get Demo',
       cta2: 'Learn More'
@@ -220,21 +220,13 @@ export default function CINCComparisonPage() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-red-600 text-white px-4 py-2 hover:bg-red-600">Why Generic AI Falls Short</Badge>
+            <Badge className="mb-6 bg-red-600 text-white px-4 py-2 hover:bg-red-600">Skip Costly Lead Packages, Choose Intelligent AI</Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              RealAI vs. <span className="text-red-400">CINC</span>
+              Skip the Costly Lead Packages. <span className="text-red-400">Choose Intelligent AI Instead.</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              {competitor.hero.subtitle}
+              Escape expensive lead generation costs and forced monthly packages. Get comprehensive AI automation without the hidden fees.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Button size="lg" variant="default" className="bg-white text-slate-900 hover:bg-gray-100">
-                {competitor.hero.cta1}
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900">
-                {competitor.hero.cta2}
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -244,30 +236,30 @@ export default function CINCComparisonPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap gap-8 justify-center">
             <div className="flex items-center gap-3">
-              <Clock className="text-slate-600 w-6 h-6" />
-              <span className="text-lg">Save 20+ hours per agent weekly</span>
+              <CheckCircle className="text-green-600 w-6 h-6" />
+              <span className="text-lg">No forced lead purchases or ad spend requirements</span>
             </div>
             <div className="flex items-center gap-3">
-              <TrendingUp className="text-slate-600 w-6 h-6" />
-              <span className="text-lg">3x faster response times</span>
+              <CheckCircle className="text-green-600 w-6 h-6" />
+              <span className="text-lg">AI that works with your existing leads and sources</span>
             </div>
             <div className="flex items-center gap-3">
-              <Users className="text-slate-600 w-6 h-6" />
-              <span className="text-lg">Scale without hiring</span>
+              <CheckCircle className="text-green-600 w-6 h-6" />
+              <span className="text-lg">Comprehensive automation beyond just lead follow-up</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Problem with Generic Solutions */}
+      {/* The Problem with CINC's Forced Model */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-slate-900">The Problem with One-Size-Fits-All AI</h2>
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">The Hidden Costs of CINC's All-In-One Approach</h2>
               <p className="text-xl text-slate-600">
-                Generic AI tools like CINC offer basic functionalities, but when it comes to real estate—where
-                every lead and interaction is critical—they fall short.
+                CINC forces you to buy their leads even when you just want CRM functionality. 
+                This means paying $899-$1,500+ monthly for leads you may not want or need.
               </p>
             </div>
 
@@ -276,33 +268,33 @@ export default function CINCComparisonPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-red-800">
                     <AlertTriangle className="w-6 h-6" />
-                    Generic AI Limitations
+                    CINC's Forced Bundle Model
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                    <span className="text-red-700">Basic lead generation only</span>
+                    <span className="text-red-700">Must purchase leads to access CRM ($899-$1,500+/month)</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                    <span className="text-red-700">No real estate domain expertise</span>
+                    <span className="text-red-700">Can't opt out of lead generation costs</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                    <span className="text-red-700">Generic messaging that sounds robotic</span>
+                    <span className="text-red-700">Limited to their lead sources and territories</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                    <span className="text-red-700">No integration with MLS or real estate CRMs</span>
+                    <span className="text-red-700">Additional costs for premium features</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                    <span className="text-red-700">Set-it-and-forget-it approach</span>
+                    <span className="text-red-700">Long-term contracts with setup fees</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
-                    <span className="text-red-700">Risk of brand damage from poor AI responses</span>
+                    <span className="text-red-700">Basic automation compared to true AI</span>
                   </div>
                 </CardContent>
               </Card>
@@ -311,33 +303,33 @@ export default function CINCComparisonPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-green-800">
                     <Shield className="w-6 h-6" />
-                    RealAI Advantages
+                    RealAI's Freedom & Intelligence
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-green-700">Complete brokerage transformation</span>
+                    <span className="text-green-700">Use any lead source - no forced purchases</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-green-700">20+ years real estate expertise</span>
+                    <span className="text-green-700">One-time investment, not perpetual monthly drain</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-green-700">AI trained to sound like your brand</span>
+                    <span className="text-green-700">6 specialized AI agents vs. basic automation</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-green-700">Deep CRM, MLS, and operations integration</span>
+                    <span className="text-green-700">Complete business automation, not just lead follow-up</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-green-700">Human-guided deployment with oversight</span>
+                    <span className="text-green-700">No contracts, setup fees, or hidden costs</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-green-700">Brand protection and quality assurance</span>
+                    <span className="text-green-700">Works with your existing lead generation strategy</span>
                   </div>
                 </CardContent>
               </Card>

@@ -259,7 +259,7 @@ export default function VirtualAssistantsComparisonPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-blue-600 text-white px-4 py-2 hover:bg-blue-600">Real Estate AI Comparison</Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              AI Assistants vs. Human Virtual Assistants
+              One AI System vs. Multiple Assistants: Which Scales Your Brokerage Better?
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
               Why AI is changing the game for real estate professionals
