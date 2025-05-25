@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -32,6 +32,14 @@ const defaultContent = {
 }
 
 export default function DownloadPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DownloadPageContent />
+    </Suspense>
+  )
+}
+
+function DownloadPageContent() {
   const searchParams = useSearchParams()
   const [content, setContent] = useState(defaultContent)
   const [formData, setFormData] = useState({

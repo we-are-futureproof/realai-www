@@ -40,7 +40,7 @@ export function Footer() {
     { href: "/resources/implementation-guide", label: "Implementation Guide", disabled: false },
     { href: "/resources/ai-best-practices", label: "AI Best Practices", disabled: false },
     { href: "/resources/success-stories", label: "Success Stories", disabled: false },
-    { href: "#help-center", label: "Help Center", disabled: true },
+    { href: "/resources/help-center", label: "Help Center", disabled: false },
   ]
 
   return (
