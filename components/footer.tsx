@@ -36,7 +36,7 @@ export function Footer() {
   ]
 
   const resources = [
-    { href: "#case-studies", label: "Case Studies", disabled: true },
+    { href: "/resources/case-studies", label: "Case Studies", disabled: false },
     { href: "#implementation-guide", label: "Implementation Guide", disabled: true },
     { href: "#ai-best-practices", label: "AI Best Practices", disabled: true },
     { href: "#success-stories", label: "Success Stories", disabled: true },
