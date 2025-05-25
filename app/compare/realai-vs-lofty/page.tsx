@@ -45,7 +45,7 @@ export default function LoftyComparisonPage() {
               Why Pay for IDX When You Need AI? <span className="text-purple-400">Get Intelligent Automation Without the Website Tax</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              Stop settling for basic lead routing. Get comprehensive AI that transforms your entire business.
+              Lofty bundles everything together. RealAI gives you best-in-class AI automation that works with the tools you already love.
             </p>
           </div>
         </div>

@@ -45,7 +45,7 @@ export default function SalesforceComparisonPage() {
               Built for Real Estate, <span className="text-cyan-400">Not Everything Else</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              Enterprise complexity vs real estate specialization. Get AI built for your industry.
+              Why force-fit your brokerage into Salesforce when you can have AI designed specifically for real estate?
             </p>
           </div>
         </div>

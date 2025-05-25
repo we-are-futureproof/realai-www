@@ -45,7 +45,7 @@ export default function BuildingInHouseComparisonPage() {
               You're a Brokerage, <span className="text-red-400">Not a Tech Startup</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-300 leading-relaxed">
-              Professional AI vs years of development. Get proven solutions now, not later.
+              Why building in-house AI distracts from your core business of selling real estate
             </p>
           </div>
         </div>
