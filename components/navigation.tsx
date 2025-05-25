@@ -19,8 +19,10 @@ export function Navigation() {
   ]
 
   const competitiveLinks = [
-    { href: "/vs-meetalfred", label: "vs MeetAlfred" },
-    // Future comparison pages will be added here
+    { href: "/compare/realai-vs-meetalfred", label: "vs MeetAlfred" },
+    { href: "/compare/realai-vs-cinc", label: "vs CINC" },
+    { href: "/compare/realai-vs-structurely", label: "vs Structurely" },
+    { href: "/compare/realai-vs-virtual-assistants", label: "vs Virtual Assistants" },
   ]
 
   return (

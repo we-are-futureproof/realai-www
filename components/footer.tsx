@@ -8,12 +8,11 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const competitiveComparisons = [
-    { href: "/vs-meetalfred", label: "vs MeetAlfred" },
-    // Future comparison pages will be added here as they're created
-    { href: "#cinc", label: "vs CINC (Coming Soon)", disabled: true },
-    { href: "#structurely", label: "vs Structurely (Coming Soon)", disabled: true },
+    { href: "/compare/realai-vs-meetalfred", label: "vs MeetAlfred" },
+    { href: "/compare/realai-vs-cinc", label: "vs CINC" },
+    { href: "/compare/realai-vs-structurely", label: "vs Structurely" },
+    { href: "/compare/realai-vs-virtual-assistants", label: "vs Virtual Assistants" },
     { href: "#top-producer", label: "vs Top Producer (Coming Soon)", disabled: true },
-    { href: "#virtual-assistants", label: "vs Virtual Assistants (Coming Soon)", disabled: true },
   ]
 
   const quickLinks = [
