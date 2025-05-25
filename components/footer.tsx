@@ -39,7 +39,7 @@ export function Footer() {
     { href: "/resources/case-studies", label: "Case Studies", disabled: false },
     { href: "/resources/implementation-guide", label: "Implementation Guide", disabled: false },
     { href: "/resources/ai-best-practices", label: "AI Best Practices", disabled: false },
-    { href: "#success-stories", label: "Success Stories", disabled: true },
+    { href: "/resources/success-stories", label: "Success Stories", disabled: false },
     { href: "#help-center", label: "Help Center", disabled: true },
   ]
 
