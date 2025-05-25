@@ -20,6 +20,34 @@ This is a Next.js 15 application using the App Router pattern with TypeScript an
 - **Styling**: Tailwind CSS with CSS variables for theming and shadcn/ui design tokens
 - **Type Safety**: TypeScript with strict mode enabled
 
+### Current Pages
+
+**Main Pages:**
+- `/` - Homepage (main value proposition)
+- `/about` - Team backgrounds and company mission
+- `/our-approach` - 4-phase methodology and value proposition
+- `/ai-tools-landscape` - Comprehensive guide to real estate AI tools
+- `/discovery` - Detailed questionnaire for custom strategy
+- `/roi-calculator` - ROI calculation tool
+
+**Comparison Pages (16 total):**
+- `/compare/realai-vs-activecampaign` - Email automation comparison
+- `/compare/realai-vs-building-inhouse` - In-house development vs RealAI
+- `/compare/realai-vs-cinc` - Lead generation platform comparison
+- `/compare/realai-vs-diy-ai` - DIY AI solutions comparison
+- `/compare/realai-vs-follow-up-boss` - CRM integration comparison
+- `/compare/realai-vs-hubspot` - General CRM vs real estate-specific AI
+- `/compare/realai-vs-kvcore` - All-in-one platform comparison
+- `/compare/realai-vs-lofty` - IDX and marketing platform comparison
+- `/compare/realai-vs-meetalfred` - LinkedIn automation comparison
+- `/compare/realai-vs-roof-ai` - AI chatbot comparison
+- `/compare/realai-vs-salesforce` - Enterprise CRM comparison
+- `/compare/realai-vs-structurely` - AI assistant comparison
+- `/compare/realai-vs-top-producer` - Legacy CRM comparison
+- `/compare/realai-vs-traditional-software` - Rule-based vs AI comparison
+- `/compare/realai-vs-virtual-assistants` - Virtual assistant comparison
+- `/compare/realai-vs-wise-agent` - CRM platform comparison
+
 ### Key Technologies
 
 - Next.js 15 with React 19

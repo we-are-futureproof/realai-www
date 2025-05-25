@@ -357,7 +357,7 @@ export function ROICalculator() {
             These projections are based on conservative estimates. Many clients see even better results.
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-4" asChild>
-            <a href="/discovery">Schedule Your Discovery Call</a>
+            <a href="/get-started">Schedule Your Discovery Call</a>
           </Button>
         </CardContent>
       </Card>

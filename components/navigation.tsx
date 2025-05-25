@@ -81,7 +81,7 @@ export function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
             <Button asChild>
-              <Link href="/discovery">Get Started</Link>
+              <Link href="/get-started">Get Started</Link>
             </Button>
           </div>
 
@@ -126,7 +126,7 @@ export function Navigation() {
               </div>
               <div className="px-3 py-2">
                 <Button asChild className="w-full">
-                  <Link href="/discovery" onClick={() => setIsOpen(false)}>
+                  <Link href="/get-started" onClick={() => setIsOpen(false)}>
                     Get Started
                   </Link>
                 </Button>

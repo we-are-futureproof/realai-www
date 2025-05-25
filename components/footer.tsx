@@ -32,7 +32,7 @@ export function Footer() {
     { href: "/our-approach", label: "Our Approach" },
     { href: "/ai-tools-landscape", label: "AI Tools Guide" },
     { href: "/roi-calculator", label: "ROI Calculator" },
-    { href: "/discovery", label: "Get Started" },
+    { href: "/get-started", label: "Get Started" },
   ]
 
   const resources = [

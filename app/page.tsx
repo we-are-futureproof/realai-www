@@ -52,7 +52,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4" asChild>
-                <Link href="/discovery">Schedule Discovery Call</Link>
+                <Link href="/get-started">Get Started Today</Link>
               </Button>
               <Button
                 size="lg"
@@ -266,7 +266,9 @@ export default function HomePage() {
                       <span>Standard CRM integration</span>
                     </div>
                   </div>
-                  <Button className="w-full mt-6">Get Started</Button>
+                  <Link href="/get-started">
+                    <Button className="w-full mt-6">Get Started</Button>
+                  </Link>
                 </CardContent>
               </Card>
 
@@ -293,7 +295,9 @@ export default function HomePage() {
                       <span>Marketing automation</span>
                     </div>
                   </div>
-                  <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">Get Started</Button>
+                  <Link href="/get-started">
+                    <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">Get Started</Button>
+                  </Link>
                 </CardContent>
               </Card>
 
@@ -321,7 +325,9 @@ export default function HomePage() {
                       <span>Ongoing support</span>
                     </div>
                   </div>
-                  <Button className="w-full mt-6">Get Started</Button>
+                  <Link href="/get-started">
+                    <Button className="w-full mt-6">Get Started</Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>

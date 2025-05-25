@@ -113,12 +113,42 @@ We offer a comprehensive discovery questionnaire covering:
 
 ## Website Structure
 
+**Main Pages:**
 - Homepage: Main value proposition and AI agent overview
 - About: Team backgrounds and company mission
 - Our Approach: 4-phase methodology and value proposition
 - AI Tools Landscape: Comprehensive guide to real estate AI tools
-- vs MeetAlfred: Comparison with generic AI solutions
 - Discovery: Detailed questionnaire for custom strategy development
+- ROI Calculator: Calculate potential ROI from AI implementation
+
+**Comparison Pages (16 total):**
+- vs ActiveCampaign: Email automation that speaks real estate
+- vs Building In-house: You're a brokerage, not a tech startup
+- vs CINC: Skip the costly lead packages, choose intelligent AI instead
+- vs DIY AI: DIY AI looks simple, until it isn't
+- vs Follow Up Boss: Keep your CRM, add real intelligence
+- vs HubSpot: When your CRM thinks a house is just another product
+- vs kvCore: RealAI vs kvCORE - focused AI vs trying to do everything
+- vs Lofty: Why pay for IDX when you need AI? Get intelligent automation without the website tax
+- vs MeetAlfred: LinkedIn automation vs complete real estate AI transformation
+- vs Roof AI: From chatbot to complete AI - the natural evolution
+- vs Salesforce: Built for real estate, not everything else
+- vs Structurely: One AI assistant or six? Why complete AI teams outperform solo acts
+- vs Top Producer: Breathe new life into your legacy CRM
+- vs Traditional Software: Software follows rules, AI thinks
+- vs Virtual Assistants: One AI system vs multiple assistants - which scales your brokerage better?
+- vs Wise Agent: When you're ready to graduate from basic to brilliant
+
+## Competitive Positioning
+
+### MeetAlfred Comparison
+MeetAlfred focuses on LinkedIn automation and generic outreach, while RealAI provides:
+- Complete real estate brokerage transformation vs single-channel automation
+- 6 specialized AI agents vs one generic automation tool
+- Real estate domain expertise (20+ years) vs generic sales automation
+- CRM, MLS, and marketing integration vs LinkedIn-only focus
+- Human-guided deployment with brand protection vs DIY setup
+- Professional-grade AI vs basic automation scripts
 
 ---
 

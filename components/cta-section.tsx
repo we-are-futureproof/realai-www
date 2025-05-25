@@ -12,7 +12,7 @@ export function CTASection() {
             The future of real estate isn't artificial. See how RealAI can scale your operations while protecting your brand.
           </p>
           <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700 text-lg px-8 py-4" asChild>
-            <Link href="/discovery">Schedule Your Discovery Call</Link>
+            <Link href="/get-started">Schedule Your Discovery Call</Link>
           </Button>
         </div>
       </div>
