@@ -15,6 +15,7 @@ export function Navigation() {
     { href: "/our-approach", label: "Our Approach" },
     { href: "/ai-tools-landscape", label: "AI Tools Guide" },
     { href: "/vs-meetalfred", label: "Why Not MeetAlfred?" },
+    { href: "/roi-calculator", label: "ROI Calculator" },
   ]
 
   return (
