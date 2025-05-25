@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Users, TrendingUp, Star, Zap, Shield, Target, Clock } from "lucide-react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { CTASection } from "@/components/cta-section"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -357,20 +359,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Work with Us?</h2>
-            <p className="text-xl mb-8 text-slate-300">
-              Let's discuss how our combined expertise can transform your brokerage with AI that actually works.
-            </p>
-            <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4" asChild>
-              <Link href="/discovery">Schedule Your Discovery Call</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      
+      <CTASection />
+      <Footer />
     </div>
   )
 }

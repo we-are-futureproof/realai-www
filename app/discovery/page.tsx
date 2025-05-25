@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { CTASection } from "@/components/cta-section"
 import { CheckCircle } from "lucide-react"
 import type { Metadata } from 'next'
 
@@ -351,6 +353,9 @@ export default function DiscoveryPage() {
           </div>
         </div>
       </section>
+      
+      <CTASection />
+      <Footer />
     </div>
   )
 }

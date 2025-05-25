@@ -4,7 +4,8 @@ import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Menu, X, ChevronDown } from "lucide-react"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -14,8 +15,12 @@ export function Navigation() {
     { href: "/about", label: "About" },
     { href: "/our-approach", label: "Our Approach" },
     { href: "/ai-tools-landscape", label: "AI Tools Guide" },
-    { href: "/vs-meetalfred", label: "Why Not MeetAlfred?" },
     { href: "/roi-calculator", label: "ROI Calculator" },
+  ]
+
+  const competitiveLinks = [
+    { href: "/vs-meetalfred", label: "vs MeetAlfred" },
+    // Future comparison pages will be added here
   ]
 
   return (
@@ -46,6 +51,21 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-slate-600 hover:text-slate-900 transition-colors">
+                Why Choose RealAI?
+                <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48">
+                {competitiveLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href} className="w-full">
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Button asChild>
               <Link href="/discovery">Get Started</Link>
             </Button>
@@ -77,6 +97,19 @@ export function Navigation() {
                   {link.label}
                 </Link>
               ))}
+              <div className="px-3 py-2">
+                <div className="text-sm font-medium text-slate-700 mb-2">Why Choose RealAI?</div>
+                {competitiveLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block px-3 py-1 text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors text-sm"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
               <div className="px-3 py-2">
                 <Button asChild className="w-full">
                   <Link href="/discovery" onClick={() => setIsOpen(false)}>

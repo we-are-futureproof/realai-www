@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Users, TrendingUp, Star, Zap, Shield, Target, Clock } from "lucide-react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { CTASection } from "@/components/cta-section"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -327,26 +329,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Let's Build Your AI Team</h2>
-            <p className="text-xl mb-4 text-slate-300">You've built a great brokerage.</p>
-            <p className="text-xl mb-4 text-slate-300">
-              Now let's automate the parts that slow you down—so your agents can sell more, work less, and build a brand
-              people want to join.
-            </p>
-            <p className="text-lg mb-8 text-slate-400 italic">
-              The future of real estate isn't artificial.
-            </p>
-            <Button size="lg" className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 border border-transparent text-lg px-8 py-4 mb-6" asChild>
-              <Link href="/discovery">Schedule a Discovery Call Today</Link>
-            </Button>
-            <p className="text-slate-400">Your future team of AI agents is ready to work</p>
-          </div>
-        </div>
-      </section>
+      
+      <CTASection />
+      <Footer />
     </div>
   )
 }
